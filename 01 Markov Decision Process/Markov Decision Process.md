@@ -1,7 +1,3 @@
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 ##  1 Markov Decision Process
 
 ### 1.1 马尔科夫决策过程理论讲解
