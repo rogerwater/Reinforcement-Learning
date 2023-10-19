@@ -50,9 +50,6 @@ class KB_Game:
         return action
 
     def train(self, play_total, policy, **kwargs):
-        reward_1 = []
-        reward_2 = []
-        reward_3 = []
 
         for i in range(play_total):
             action = 0
@@ -73,9 +70,6 @@ class KB_Game:
             # 更新值函数
             self.q[self.a-1] = (self.q[self.a-1]*self.action_counts[self.a-1]+self.r) / (self.action_counts[self.a-1] + 1)
             self.action_counts[self.a-1] += 1
-            reward_1.append([self.q[0]])
-            reward_2.append([self.q[1]])
-            reward_3.append([self.q[2]])
             self.current_cumulative_rewards += self.r
             self.current_cumulative_rewards_history.append(self.current_cumulative_rewards)
             self.counts_history.append(i)
