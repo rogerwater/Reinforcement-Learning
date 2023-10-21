@@ -167,7 +167,7 @@ class YuanYangEnv:
         flag_find = self.find(next_position)
         if flag_find == 1:
             return self.position_to_state(next_position), 10, True
-        return self.position_to_state(next_position), -2, False
+        return self.position_to_state(next_position), -0.1, False
 
     # 判断是否要结束游戏
     def gameover(self):
